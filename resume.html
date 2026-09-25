@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume | Mike Gandolfi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #15171d;
+    --paper: #ece7db;
+    --gold: #d8a94a;
+    --gold-dim: #a5813a;
+    --rule: rgba(236,231,219,0.14);
+    --muted: #8b8779;
+    --max: 640px;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--paper);
+    font-family: 'Work Sans', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{ max-width: var(--max); margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
+  .back{
+    display: inline-block;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
+  .back:hover{ color: var(--gold); }
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 6vw, 2.6rem);
+    margin: 0 0 0.15rem;
+  }
+  .sub{ color: var(--gold); font-size: 0.95rem; margin: 0 0 2.75rem; }
+  .stats{ color: var(--muted); font-size: 0.85rem; margin: -2rem 0 2.75rem; }
+  h2{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--gold);
+    font-size: 1.05rem;
+    margin: 2.75rem 0 0.9rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .row{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 0.4rem 1rem;
+    padding: 0.45rem 0;
+    font-size: 0.92rem;
+    align-items: baseline;
+  }
+  .row .proj{ color: var(--paper); }
+  .row .role{ color: var(--muted); }
+  .row .net{ color: var(--muted); text-align: right; white-space: nowrap; }
+  .list p{ margin: 0.3rem 0; font-size: 0.92rem; color: #cfcabd; }
+  .awards{ font-size: 0.92rem; color: #cfcabd; }
+  .awards strong{ color: var(--paper); }
+  @media (max-width: 480px){
+    .row{ grid-template-columns: 1fr; gap: 0.1rem; }
+    .row .net{ text-align: left; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Mike Gandolfi</a>
+    <h1>Mike Gandolfi</h1>
+    <p class="sub">SAG-AFTRA &mdash; WGA</p>
+    <p class="stats">5'8" &middot; 150 lbs &middot; Brown hair &middot; Hazel eyes</p>
+
+    <h2>Television</h2>
+    <div class="row"><span class="proj">Gilmore Girls: A Year in the Life</span><span class="role">Andrew, 3 episodes</span><span class="net">Netflix</span></div>
+    <div class="row"><span class="proj">Gilmore Girls</span><span class="role">Andrew, recurring</span><span class="net">WB</span></div>
+    <div class="row"><span class="proj">The Tom Show</span><span class="role">Featured</span><span class="net">CBS</span></div>
+    <div class="row"><span class="proj">The Lemur</span><span class="role">Series regular</span><span class="net">Comedy Central</span></div>
+    <div class="row"><span class="proj">Apartment C</span><span class="role">Series regular</span><span class="net">Comedy Central</span></div>
+    <div class="row"><span class="proj">Love and Marriage</span><span class="role">Guest star</span><span class="net">Fox</span></div>
+    <div class="row"><span class="proj">Super Secret Movie Rules</span><span class="role">Guest</span><span class="net">VH-1</span></div>
+    <div class="row"><span class="proj">The Arena with Jesse Ventura</span><span class="role">Guest</span><span class="net">MSNBC</span></div>
+    <div class="row"><span class="proj">Goon Squad</span><span class="role">Host</span><span class="net">Pilot</span></div>
+
+    <h2>Film</h2>
+    <div class="row"><span class="proj">Stranger Danger</span><span class="role">Lead</span><span class="net">dir. Matthew Leung</span></div>
+    <div class="row"><span class="proj">Suburban Gothic</span><span class="role">Lead</span><span class="net">dir. Paul William Anderson</span></div>
+    <div class="row"><span class="proj">The Eating Place</span><span class="role">Supporting</span><span class="net">dir. Luke Haskard</span></div>
+    <div class="row"><span class="proj">The Interrogation</span><span class="role">Supporting</span><span class="net">dir. Scott Sullivan</span></div>
+    <div class="row"><span class="proj">Thanksgiving Seconds</span><span class="role">Supporting</span><span class="net">dir. Stephanie Storey</span></div>
+    <div class="row"><span class="proj">Extraordinary Proof</span><span class="role">Supporting</span><span class="net">dir. Stephanie Storey</span></div>
+
+    <h2>Web</h2>
+    <div class="row"><span class="proj">Don't Make Me Sick</span><span class="role">Lead, Dr. Kevin Carr</span><span class="net"></span></div>
+    <div class="row"><span class="proj">Earth Angel</span><span class="role">Supporting, Bob</span><span class="net"></span></div>
+    <div class="row"><span class="proj">Bravo &amp; Company</span><span class="role">Supporting, Police Chief</span><span class="net"></span></div>
+    <div class="row"><span class="proj">The Jasons' Writers Room</span><span class="role">Supporting, Frank</span><span class="net"></span></div>
+    <div class="row"><span class="proj">We're the Jasons</span><span class="role">Featured, Gary</span><span class="net"></span></div>
+
+    <h2>Training</h2>
+    <div class="list">
+      <p>Upright Citizens Brigade &mdash; Improv (101&ndash;401)</p>
+      <p>Groundlings &mdash; Improv (Basic, Intermediate)</p>
+      <p>IO West &mdash; Improv (Levels 1&ndash;7)</p>
+      <p>Nerdist &mdash; Improv (Levels 1&ndash;3)</p>
+      <p>Chris Game Commercial Workshop (Basic, Advanced)</p>
+      <p>Miles Stroth Workshop &mdash; Improv</p>
+      <p>Actors Workout Studio &mdash; Acting</p>
+      <p>Anthony Meindl's Actor Workshop &mdash; Acting</p>
+      <p>Elizabeth Mestnick Acting School &mdash; Meisner Summer Intensive</p>
+      <p>The Magic Castle &mdash; Magic (Levels 1&ndash;3)</p>
+    </div>
+
+    <h2>Writing Credits</h2>
+    <div class="row"><span class="proj">Roseanne</span><span class="role">Staff Writer, Story Editor</span><span class="net">ABC</span></div>
+    <div class="row"><span class="proj">Dennis Miller Live</span><span class="role">Writer</span><span class="net">HBO</span></div>
+    <div class="row"><span class="proj">Veronica's Closet</span><span class="role">Writer/Producer</span><span class="net">NBC</span></div>
+    <div class="row"><span class="proj">Mystery Science Theatre 3000</span><span class="role">Contributing Writer</span><span class="net">Comedy Central</span></div>
+    <div class="row"><span class="proj">The Lemur</span><span class="role">Exec. Producer/Co-Creator</span><span class="net">Comedy Central</span></div>
+    <div class="row"><span class="proj">Later with Greg Kinnear</span><span class="role">Writer</span><span class="net">NBC</span></div>
+    <div class="row"><span class="proj">The Test</span><span class="role">Producer</span><span class="net">F/X</span></div>
+    <div class="row"><span class="proj">Over the Top</span><span class="role">Co-Producer</span><span class="net">ABC</span></div>
+    <div class="row"><span class="proj">Love and Marriage</span><span class="role">Executive Story Editor</span><span class="net">Fox</span></div>
+    <div class="row"><span class="proj">Apartment C</span><span class="role">Writer</span><span class="net">Comedy Central</span></div>
+    <div class="row"><span class="proj">O2Be</span><span class="role">Consulting Producer</span><span class="net">Oxygen</span></div>
+    <div class="row"><span class="proj">Mr. Romance</span><span class="role">Consultant</span><span class="net">Oxygen</span></div>
+    <div class="row"><span class="proj">Can't Hurry Love</span><span class="role">Consultant</span><span class="net">CBS</span></div>
+
+    <h2>Writing Awards</h2>
+    <p class="awards">
+      <strong>Emmy Award</strong> for Writing in a Variety or Music Program &middot;
+      <strong>Golden Globe Award</strong> for Best TV Musical or Comedy &middot;
+      <strong>Peabody Award</strong> &middot; 2 WGA Nominations
+    </p>
+
+    <h2>Stand-Up <span style="font-style:normal; font-family:'Work Sans'; color:var(--muted); font-size:0.8rem;">(partial list)</span></h2>
+    <div class="list">
+      <p>Improv &mdash; Hollywood, San Francisco, San Diego</p>
+      <p>The Comedy Store &mdash; Hollywood, La Jolla</p>
+      <p>The Great American Music Hall &mdash; San Francisco</p>
+      <p>Zanies &mdash; Chicago</p>
+      <p>The Fillmore &mdash; San Francisco</p>
+      <p>The Comedy Gallery &mdash; Minneapolis</p>
+      <p>The Comedy Connection &mdash; Boston</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mike Gandolfi</title>
+<meta name="description" content="Mike Gandolfi — Comic, Actor, Writer, Joy-Spreader">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #15171d;
+    --bg-soft: #1c1f27;
+    --paper: #ece7db;
+    --gold: #d8a94a;
+    --gold-dim: #a5813a;
+    --rule: rgba(236,231,219,0.14);
+    --max: 640px;
+  }
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: radial-gradient(ellipse 900px 500px at 50% -10%, #23273180, transparent), var(--bg);
+    color: var(--paper);
+    font-family: 'Work Sans', system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 5rem;
+  }
+  .portrait{
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.75rem;
+    border: 1px solid var(--rule);
+  }
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 7vw, 3.4rem);
+    text-align: center;
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+  .tagline{
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.05rem;
+    font-style: italic;
+    font-family: 'Fraunces', serif;
+    margin: 0 0 2.5rem;
+  }
+  .bio{
+    max-width: 46ch;
+    margin: 0 auto 3rem;
+    text-align: center;
+    color: #cfcabd;
+    font-size: 1.02rem;
+  }
+  .divider{
+    width: 40px;
+    height: 1px;
+    background: var(--gold-dim);
+    margin: 0 auto 2.75rem;
+  }
+  .links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .links li{ border-bottom: 1px solid var(--rule); }
+  .links a{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1.15rem 0.25rem;
+    text-decoration: none;
+    color: var(--paper);
+  }
+  .links a:hover .name{ color: var(--gold); }
+  .links .name{
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem;
+    transition: color 0.15s ease;
+  }
+  .links .desc{
+    font-size: 0.88rem;
+    color: #8b8779;
+    text-align: right;
+    white-space: nowrap;
+  }
+  footer{
+    text-align: center;
+    margin-top: 3.5rem;
+    font-size: 0.85rem;
+    color: #6c6a60;
+  }
+  footer a{ color: #8b8779; }
+  @media (max-width: 420px){
+    .links .desc{ display:none; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="portrait" src="https://mikegandolfi.com/wp-content/uploads/2015/02/mike-low-res-9.jpg" alt="Mike Gandolfi">
+    <h1>Mike Gandolfi</h1>
+    <p class="tagline">Comic, Actor, Writer, Joy-Spreader</p>
+
+    <p class="bio">
+      Emmy, Peabody, and Golden Globe–winning TV writer (<em>Roseanne</em>,
+      <em>Veronica's Closet</em>, <em>Dennis Miller Live</em>), occasional actor
+      (<em>Gilmore Girls</em>), and lifelong stand-up comic. These days I split my
+      time between screenwriting, photography, and building odd little corners
+      of the internet.
+    </p>
+
+    <div class="divider"></div>
+
+    <ul class="links">
+      <li>
+        <a href="resume.html">
+          <span class="name">Resume</span>
+          <span class="desc">acting &amp; writing credits</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://bannedandfound.com" target="_blank" rel="noopener">
+          <span class="name">Banned &amp; Found</span>
+          <span class="desc">a censorship archive I built</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/mikegandolfi" target="_blank" rel="noopener">
+          <span class="name">Instagram</span>
+          <span class="desc">@MikeGandolfi</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/mikegandolfi_abstracts" target="_blank" rel="noopener">
+          <span class="name">Abstracts</span>
+          <span class="desc">photography &amp; paintings</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/thesignspoint" target="_blank" rel="noopener">
+          <span class="name">The Signs Point</span>
+          <span class="desc">real horoscopes, revisited</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:mike@mikegandolfi.com">
+          <span class="name">Email</span>
+          <span class="desc">get in touch</span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>&copy; <span id="y"></span> Mike Gandolfi</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
