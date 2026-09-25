@@ -7,23 +7,24 @@
 <meta name="description" content="Mike Gandolfi — Comic, Actor, Writer, Joy-Spreader">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #15171d;
-    --bg-soft: #1c1f27;
-    --paper: #ece7db;
-    --gold: #d8a94a;
-    --gold-dim: #a5813a;
-    --rule: rgba(236,231,219,0.14);
+    --bg: #fbf2de;
+    --ink: #2b2620;
+    --ink-soft: #5c5548;
+    --coral: #e0592e;
+    --coral-dim: #c94e28;
+    --teal: #2f8f83;
+    --rule: rgba(43,38,32,0.13);
     --max: 640px;
   }
   *{ box-sizing: border-box; }
   html{ scroll-behavior: smooth; }
   body{
     margin:0;
-    background: radial-gradient(ellipse 900px 500px at 50% -10%, #23273180, transparent), var(--bg);
-    color: var(--paper);
+    background: var(--bg);
+    color: var(--ink);
     font-family: 'Work Sans', system-ui, sans-serif;
     font-size: 17px;
     line-height: 1.6;
@@ -32,41 +33,52 @@
   .wrap{
     max-width: var(--max);
     margin: 0 auto;
-    padding: 4.5rem 1.5rem 5rem;
+    padding: 4rem 1.5rem 5rem;
   }
-  .portraits{
+  .snapshots{
+    position: relative;
+    height: 150px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    gap: 1.1rem;
-    margin: 0 auto 2rem;
+    align-items: flex-start;
+    margin: 0 auto 1.75rem;
   }
-  .portraits img{
-    width: 104px;
-    height: 104px;
-    border-radius: 50%;
+  .snapshots img{
+    width: 118px;
+    height: 118px;
     object-fit: cover;
     display: block;
-    border: 1px solid var(--rule);
+    background: #fff;
+    padding: 6px 6px 18px;
+    box-shadow: 0 6px 16px rgba(43,38,32,0.18);
   }
-  .portraits img:first-child{
-    width: 122px;
-    height: 122px;
-    transform: translateY(4px);
+  .snapshots img:first-child{
+    transform: rotate(-7deg);
+    position: relative;
+    left: 14px;
+    z-index: 1;
+  }
+  .snapshots img:last-child{
+    transform: rotate(5deg);
+    position: relative;
+    right: 14px;
+    top: 10px;
   }
   h1{
     font-family: 'Fraunces', serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: clamp(2.4rem, 7vw, 3.4rem);
     text-align: center;
     margin: 0 0 0.4rem;
     letter-spacing: -0.01em;
+    color: var(--ink);
   }
   .tagline{
     text-align: center;
-    color: var(--gold);
+    color: var(--coral);
     font-size: 1.05rem;
     font-style: italic;
+    font-weight: 600;
     font-family: 'Fraunces', serif;
     margin: 0 0 2.5rem;
   }
@@ -74,13 +86,15 @@
     max-width: 46ch;
     margin: 0 auto 3rem;
     text-align: center;
-    color: #cfcabd;
+    color: var(--ink-soft);
     font-size: 1.02rem;
   }
+  .bio em{ color: var(--ink); font-style: italic; }
   .divider{
-    width: 40px;
-    height: 1px;
-    background: var(--gold-dim);
+    width: 44px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--teal);
     margin: 0 auto 2.75rem;
   }
   .links{
@@ -97,17 +111,18 @@
     gap: 1rem;
     padding: 1.15rem 0.25rem;
     text-decoration: none;
-    color: var(--paper);
+    color: var(--ink);
   }
-  .links a:hover .name{ color: var(--gold); }
+  .links a:hover .name{ color: var(--coral); }
   .links .name{
     font-family: 'Fraunces', serif;
+    font-weight: 600;
     font-size: 1.15rem;
     transition: color 0.15s ease;
   }
   .links .desc{
     font-size: 0.88rem;
-    color: #8b8779;
+    color: var(--ink-soft);
     text-align: right;
     white-space: nowrap;
   }
@@ -115,9 +130,9 @@
     text-align: center;
     margin-top: 3.5rem;
     font-size: 0.85rem;
-    color: #6c6a60;
+    color: var(--ink-soft);
   }
-  footer a{ color: #8b8779; }
+  footer a{ color: var(--ink-soft); }
   @media (max-width: 420px){
     .links .desc{ display:none; }
   }
@@ -125,7 +140,7 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="portraits">
+    <div class="snapshots">
       <img src="mike-photo-1.jpg" alt="Mike Gandolfi">
       <img src="mike-photo-2.jpg" alt="Mike Gandolfi">
     </div>

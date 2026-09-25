@@ -9,19 +9,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #15171d;
-    --paper: #ece7db;
-    --gold: #d8a94a;
-    --gold-dim: #a5813a;
-    --rule: rgba(236,231,219,0.14);
-    --muted: #8b8779;
+    --bg: #fbf2de;
+    --ink: #2b2620;
+    --ink-soft: #5c5548;
+    --coral: #e0592e;
+    --teal: #2f8f83;
+    --rule: rgba(43,38,32,0.13);
     --max: 640px;
   }
   *{ box-sizing: border-box; }
   body{
     margin:0;
     background: var(--bg);
-    color: var(--paper);
+    color: var(--ink);
     font-family: 'Work Sans', system-ui, sans-serif;
     font-size: 16px;
     line-height: 1.55;
@@ -30,25 +30,25 @@
   .wrap{ max-width: var(--max); margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
   .back{
     display: inline-block;
-    color: var(--muted);
+    color: var(--ink-soft);
     text-decoration: none;
     font-size: 0.9rem;
     margin-bottom: 2.5rem;
   }
-  .back:hover{ color: var(--gold); }
+  .back:hover{ color: var(--coral); }
   h1{
     font-family: 'Fraunces', serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: clamp(2rem, 6vw, 2.6rem);
     margin: 0 0 0.15rem;
   }
-  .sub{ color: var(--gold); font-size: 0.95rem; margin: 0 0 2.75rem; }
-  .stats{ color: var(--muted); font-size: 0.85rem; margin: -2rem 0 2.75rem; }
+  .sub{ color: var(--coral); font-weight: 600; font-size: 0.95rem; margin: 0 0 2.75rem; }
+  .stats{ color: var(--ink-soft); font-size: 0.85rem; margin: -2rem 0 2.75rem; }
   h2{
     font-family: 'Fraunces', serif;
     font-style: italic;
-    font-weight: 500;
-    color: var(--gold);
+    font-weight: 600;
+    color: var(--teal);
     font-size: 1.05rem;
     margin: 2.75rem 0 0.9rem;
     padding-bottom: 0.6rem;
@@ -62,12 +62,14 @@
     font-size: 0.92rem;
     align-items: baseline;
   }
-  .row .proj{ color: var(--paper); }
-  .row .role{ color: var(--muted); }
-  .row .net{ color: var(--muted); text-align: right; white-space: nowrap; }
-  .list p{ margin: 0.3rem 0; font-size: 0.92rem; color: #cfcabd; }
-  .awards{ font-size: 0.92rem; color: #cfcabd; }
-  .awards strong{ color: var(--paper); }
+  .row .proj{ color: var(--ink); }
+  .row .role{ color: var(--ink-soft); }
+  .row .net{ color: var(--ink-soft); text-align: right; white-space: nowrap; }
+  .list p{ margin: 0.55rem 0; font-size: 0.92rem; color: var(--ink-soft); }
+  .list p.group-start{ margin-top: 1.1rem; }
+  .list p a{ color: var(--coral); }
+  .awards{ font-size: 0.92rem; color: var(--ink-soft); }
+  .awards strong{ color: var(--ink); }
   @media (max-width: 480px){
     .row{ grid-template-columns: 1fr; gap: 0.1rem; }
     .row .net{ text-align: left; }
@@ -109,10 +111,12 @@
 
     <h2>Training</h2>
     <div class="list">
-      <p>Upright Citizens Brigade &mdash; Improv (101&ndash;401)</p>
+      <p>Upright Citizens Brigade (LA) &mdash; Improv (101&ndash;401)</p>
       <p>Groundlings &mdash; Improv (Basic, Intermediate)</p>
       <p>IO West &mdash; Improv (Levels 1&ndash;7)</p>
       <p>Nerdist &mdash; Improv (Levels 1&ndash;3)</p>
+      <p class="group-start">ColdTowne Theater (Austin) &mdash; Improv (Levels 1&ndash;6)</p>
+      <p>Hideout Theatre (Austin) &mdash; Improv (Levels 1&ndash;9)</p>
       <p>Chris Game Commercial Workshop (Basic, Advanced)</p>
       <p>Miles Stroth Workshop &mdash; Improv</p>
       <p>Actors Workout Studio &mdash; Acting</p>
@@ -143,7 +147,7 @@
       <strong>Peabody Award</strong> &middot; 2 WGA Nominations
     </p>
 
-    <h2>Stand-Up <span style="font-style:normal; font-family:'Work Sans'; color:var(--muted); font-size:0.8rem;">(partial list)</span></h2>
+    <h2>Stand-Up <span style="font-style:normal; font-family:'Work Sans'; color:var(--ink-soft); font-size:0.8rem;">(partial list)</span></h2>
     <div class="list">
       <p>Improv &mdash; Hollywood, San Francisco, San Diego</p>
       <p>The Comedy Store &mdash; Hollywood, La Jolla</p>
