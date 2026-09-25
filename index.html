@@ -34,14 +34,25 @@
     margin: 0 auto;
     padding: 4.5rem 1.5rem 5rem;
   }
-  .portrait{
-    width: 108px;
-    height: 108px;
+  .portraits{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.1rem;
+    margin: 0 auto 2rem;
+  }
+  .portraits img{
+    width: 104px;
+    height: 104px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    margin: 0 auto 1.75rem;
     border: 1px solid var(--rule);
+  }
+  .portraits img:first-child{
+    width: 122px;
+    height: 122px;
+    transform: translateY(4px);
   }
   h1{
     font-family: 'Fraunces', serif;
@@ -114,7 +125,10 @@
 </head>
 <body>
   <div class="wrap">
-    <img class="portrait" src="https://mikegandolfi.com/wp-content/uploads/2015/02/mike-low-res-9.jpg" alt="Mike Gandolfi">
+    <div class="portraits">
+      <img src="mike-photo-1.jpg" alt="Mike Gandolfi">
+      <img src="mike-photo-2.jpg" alt="Mike Gandolfi">
+    </div>
     <h1>Mike Gandolfi</h1>
     <p class="tagline">Comic, Actor, Writer, Joy-Spreader</p>
 
@@ -130,6 +144,12 @@
 
     <ul class="links">
       <li>
+        <a href="bio.html">
+          <span class="name">Bio</span>
+          <span class="desc">the long version</span>
+        </a>
+      </li>
+      <li>
         <a href="resume.html">
           <span class="name">Resume</span>
           <span class="desc">acting &amp; writing credits</span>
@@ -142,6 +162,12 @@
         </a>
       </li>
       <li>
+        <a href="https://bannedandfound.substack.com" target="_blank" rel="noopener">
+          <span class="name">Banned &amp; Found &mdash; the newsletter</span>
+          <span class="desc">on Substack</span>
+        </a>
+      </li>
+      <li>
         <a href="https://instagram.com/mikegandolfi" target="_blank" rel="noopener">
           <span class="name">Instagram</span>
           <span class="desc">@MikeGandolfi</span>
@@ -149,7 +175,7 @@
       </li>
       <li>
         <a href="https://instagram.com/mikegandolfi_abstracts" target="_blank" rel="noopener">
-          <span class="name">Abstracts</span>
+          <span class="name">My Abstract Photography Page</span>
           <span class="desc">photography &amp; paintings</span>
         </a>
       </li>
