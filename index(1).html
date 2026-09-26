@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mike Gandolfi</title>
+<meta name="description" content="Mike Gandolfi — Comic, Actor, Writer, Joy-Spreader">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #dcece8; --ink: #1e3532; --ink-soft: #4c645f;
+    --coral: #e0592e; --coral-soft: #f6d9c8; --teal: #1f7a70; --teal-soft: #f6e9c4;
+    --rule: rgba(30,53,50,0.14); --max: 640px;
+  }
+  *{ box-sizing: border-box; }
+  html,body{ height: 100%; }
+  body{
+    margin:0; background: var(--bg); color: var(--ink);
+    font-family: 'Work Sans', system-ui, sans-serif; line-height: 1.35;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap{
+    max-width: var(--max); margin: 0 auto; position: relative;
+    min-height: 100dvh; display: flex; flex-direction: column; justify-content: center;
+    padding: clamp(0.75rem, 3dvh, 2rem) 1.25rem;
+  }
+  .blob{ position: absolute; border-radius: 50%; filter: blur(38px); opacity: 0.5; z-index: -1; }
+  .blob.b1{ width: 200px; height: 200px; background: var(--teal-soft); top: -30px; left: -60px; }
+  .blob.b2{ width: 160px; height: 160px; background: var(--coral-soft); top: 0; right: -50px; }
+  .snapshots{
+    position: relative; height: clamp(70px, 14dvh, 130px);
+    display: flex; justify-content: center; align-items: flex-start;
+    margin: 0 auto clamp(0.5rem, 1.5dvh, 1rem);
+  }
+  .snapshots img{
+    width: clamp(64px, 12dvh, 108px); height: clamp(64px, 12dvh, 108px);
+    object-fit: cover; display: block; background: #fff;
+    padding: 5px 5px 14px; box-shadow: 0 6px 14px rgba(43,38,32,0.18);
+  }
+  .snapshots img:first-child{ transform: rotate(-7deg); position: relative; left: 12px; z-index: 1; }
+  .snapshots img:last-child{ transform: rotate(5deg); position: relative; right: 12px; top: 8px; }
+  h1{
+    font-family: 'Fraunces', serif; font-weight: 700;
+    font-size: clamp(1.7rem, 5.5dvh, 2.9rem);
+    text-align: center; margin: 0 0 0.2rem; letter-spacing: -0.01em; line-height: 1.1;
+  }
+  .tagline{
+    text-align: center; color: var(--coral); font-size: clamp(0.85rem, 2.2dvh, 1.02rem);
+    font-style: italic; font-weight: 600; font-family: 'Fraunces', serif;
+    margin: 0 0 clamp(0.5rem, 1.5dvh, 1rem);
+  }
+  .bio{
+    max-width: 48ch; margin: 0 auto clamp(0.7rem, 2dvh, 1.5rem); text-align: center;
+    color: var(--ink-soft); font-size: clamp(0.82rem, 1.9dvh, 0.95rem); line-height: 1.4;
+  }
+  .bio em{ color: var(--ink); font-style: italic; }
+  .links{ list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(0.3rem, 0.8dvh, 0.55rem); }
+  .links a{
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+    padding: clamp(0.45rem, 1.1dvh, 0.7rem) 1rem; text-decoration: none; color: var(--ink);
+    border-radius: 12px; background: rgba(255,255,255,0.55); border: 1px solid var(--rule);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  }
+  .links a:hover{ transform: translateY(-2px); box-shadow: 0 8px 20px rgba(43,38,32,0.1); background: #fff; }
+  .links li:nth-child(odd) a:hover{ border-color: var(--coral); }
+  .links li:nth-child(even) a:hover{ border-color: var(--teal); }
+  .links .name{ font-family: 'Fraunces', serif; font-weight: 600; font-size: clamp(0.9rem, 2dvh, 1.05rem); }
+  .links .desc{ font-size: clamp(0.72rem, 1.6dvh, 0.82rem); color: var(--ink-soft); text-align: right; white-space: nowrap; }
+  footer{ text-align: center; margin-top: clamp(0.6rem, 1.5dvh, 1.25rem); font-size: 0.78rem; color: var(--ink-soft); }
+  @media (max-width: 420px){ .links .desc{ display:none; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="snapshots">
+      <img src="mike-photo-1.jpg" alt="Mike Gandolfi">
+      <img src="mike-photo-2.jpg" alt="Mike Gandolfi">
+    </div>
+    <h1>Mike Gandolfi</h1>
+    <p class="tagline">Comic, Actor, Writer, Joy-Spreader</p>
+    <p class="bio">
+      Emmy, Peabody &amp; Golden Globe&ndash;winning TV writer, occasional actor
+      (<em>Gilmore Girls</em>), lifelong stand-up comic.
+    </p>
+    <ul class="links">
+      <li><a href="bio.html"><span class="name">Bio</span><span class="desc">the long version</span></a></li>
+      <li><a href="resume.html"><span class="name">Resume</span><span class="desc">acting &amp; writing credits</span></a></li>
+      <li><a href="gallery.html"><span class="name">Gallery</span><span class="desc">headshots &amp; production stills</span></a></li>
+      <li><a href="https://bannedandfound.com" target="_blank" rel="noopener"><span class="name">Banned &amp; Found</span><span class="desc">my archive of censored art</span></a></li>
+      <li><a href="https://bannedandfound.substack.com" target="_blank" rel="noopener"><span class="name">Banned &amp; Found &mdash; the newsletter</span><span class="desc">on Substack</span></a></li>
+      <li><a href="https://instagram.com/mikegandolfi" target="_blank" rel="noopener"><span class="name">Instagram</span><span class="desc">@MikeGandolfi</span></a></li>
+      <li><a href="https://instagram.com/mikegandolfi_abstracts" target="_blank" rel="noopener"><span class="name">My Abstract Photography Page</span><span class="desc">photography &amp; paintings</span></a></li>
+      <li><a href="https://instagram.com/thesignspoint" target="_blank" rel="noopener"><span class="name">The Signs Point</span><span class="desc">funny historical horoscopes</span></a></li>
+      <li><a href="mailto:mike@mikegandolfi.com"><span class="name">Email</span><span class="desc">get in touch</span></a></li>
+    </ul>
+    <footer>&copy; <span id="y"></span> Mike Gandolfi</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
