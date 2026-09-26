@@ -23,6 +23,13 @@
   figure{ margin:0; }
   figure img{ width:100%; aspect-ratio:2/3; object-fit:cover; border-radius:10px; box-shadow:0 4px 14px rgba(30,53,50,0.12); display:block; }
   figcaption{ font-size:0.82rem; color:var(--ink-soft); margin-top:0.5rem; text-align:center; }
+  figure img{ cursor: zoom-in; }
+  .lightbox{
+    display:none; position:fixed; inset:0; background:rgba(20,30,28,0.88);
+    z-index:50; align-items:center; justify-content:center; padding:2rem; cursor:zoom-out;
+  }
+  .lightbox.open{ display:flex; }
+  .lightbox img{ max-width:100%; max-height:100%; border-radius:8px; box-shadow:0 10px 40px rgba(0,0,0,0.4); }
 </style>
 </head>
 <body>
@@ -67,5 +74,17 @@
     <figure><img src="https://mikegandolfi.com/wp-content/uploads/2015/02/ts-photo-table-web.jpg?w=300" alt="Thanksgiving Seconds table"><figcaption>Thanksgiving Seconds &ndash; at the table</figcaption></figure>
   </div>
 </div>
+<div class="lightbox" id="lightbox"><img id="lightbox-img" src="" alt=""></div>
+<script>
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.grid img').forEach(function(img){
+    img.addEventListener('click', function(){
+      lbImg.src = this.src.replace('?w=300', '');
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', function(){ lb.classList.remove('open'); });
+</script>
 </body>
 </html>
